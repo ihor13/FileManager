@@ -1,0 +1,139 @@
+object Form2: TForm2
+  Left = 463
+  Top = 134
+  Width = 240
+  Height = 417
+  Caption = #1050#1088#1080#1090#1077#1088#1110#1111' '#1074#1110#1076#1073#1086#1088#1091' '#1092#1072#1081#1083#1110#1074
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label3: TLabel
+    Left = 8
+    Top = 8
+    Width = 39
+    Height = 13
+    Caption = #1064#1072#1073#1083#1086#1085
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Top = 144
+    Width = 209
+    Height = 185
+    Caption = #1044#1072#1090#1072' '#1089#1090#1074#1086#1088#1077#1085#1085#1103' '#1092#1072#1081#1083#1072
+    TabOrder = 0
+    object RGData: TRadioGroup
+      Left = 8
+      Top = 16
+      Width = 193
+      Height = 121
+      ItemIndex = 0
+      Items.Strings = (
+        #1073#1091#1076#1100'-'#1103#1082#1072
+        #1086#1089#1090#1072#1085#1085#1110#1081' '#1090#1080#1078#1076#1077#1085#1100
+        #1086#1089#1090#1072#1085#1085#1110#1081' '#1084#1110#1089#1103#1094#1100
+        #1086#1089#1090#1072#1085#1085#1110#1081' '#1088#1110#1082
+        #1074' '#1076#1110#1072#1087#1072#1079#1086#1085#1110)
+      TabOrder = 0
+      OnClick = RGDataClick
+    end
+    object DateTimePicker1: TDateTimePicker
+      Left = 8
+      Top = 152
+      Width = 81
+      Height = 21
+      CalAlignment = dtaLeft
+      Date = 41669.5094521644
+      Time = 41669.5094521644
+      DateFormat = dfShort
+      DateMode = dmComboBox
+      Enabled = False
+      Kind = dtkDate
+      ParseInput = False
+      TabOrder = 1
+    end
+    object DateTimePicker2: TDateTimePicker
+      Left = 120
+      Top = 152
+      Width = 81
+      Height = 21
+      CalAlignment = dtaLeft
+      Date = 41669.5095899768
+      Time = 41669.5095899768
+      DateFormat = dfShort
+      DateMode = dmComboBox
+      Enabled = False
+      Kind = dtkDate
+      ParseInput = False
+      TabOrder = 2
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 8
+    Top = 56
+    Width = 209
+    Height = 73
+    Caption = #1056#1086#1079#1084#1110#1088' '#1092#1072#1081#1083#1072
+    TabOrder = 1
+    object Label2: TLabel
+      Left = 184
+      Top = 48
+      Width = 14
+      Height = 13
+      Caption = #1050#1041
+    end
+    object CBSize: TCheckBox
+      Left = 16
+      Top = 16
+      Width = 97
+      Height = 17
+      Caption = #1073#1091#1076#1100'-'#1103#1082#1080#1081
+      Checked = True
+      State = cbChecked
+      TabOrder = 0
+      OnClick = CBSizeClick
+    end
+    object ComboBox1: TComboBox
+      Left = 16
+      Top = 40
+      Width = 73
+      Height = 21
+      Enabled = False
+      ItemHeight = 13
+      TabOrder = 1
+      Text = #1085#1077' '#1084#1077#1085#1096#1077
+      Items.Strings = (
+        #1085#1077' '#1084#1077#1085#1096#1077
+        #1085#1077' '#1073#1110#1083#1100#1096#1077)
+    end
+    object CSpinEdit1: TCSpinEdit
+      Left = 96
+      Top = 40
+      Width = 73
+      Height = 22
+      TabOrder = 2
+    end
+  end
+  object EPattern: TEdit
+    Left = 8
+    Top = 24
+    Width = 209
+    Height = 21
+    TabOrder = 2
+    Text = '*.*'
+  end
+  object Button1: TButton
+    Left = 64
+    Top = 336
+    Width = 81
+    Height = 33
+    Caption = #1054#1082
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+end

@@ -1,0 +1,23 @@
+//---------------------------------------------------------------------------
+#include <vcl.h>
+#pragma hdrstop
+USEFORM("Urichedit.cpp", Form6);
+USEFORM("Unit4.cpp", Form9);
+//---------------------------------------------------------------------------
+WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
+{
+    try
+    {
+        Application->Initialize();
+        Application->Title = "Кодування";
+                 Application->CreateForm(__classid(TForm6), &Form6);
+                 Application->CreateForm(__classid(TForm9), &Form9);
+                 Application->Run();
+    }
+    catch (Exception &exception)
+    {
+        Application->ShowException(&exception);
+    }
+    return 0;
+}
+//---------------------------------------------------------------------------
